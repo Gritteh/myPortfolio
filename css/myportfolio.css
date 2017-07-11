@@ -87,6 +87,7 @@ header > h1 {
   border-style: solid;
   border-color: white;
   border-width: 4px;
+  padding: 6px 16px;
 }
 .blueLine {
   height: 10px;
@@ -116,7 +117,7 @@ header > h1 {
   float:right;
   color: #3e565d;
   font-size: 20px;
-  margin-right: 350px;
+  margin-right: 300px;
   font-family: 'Open Sans', sans-serif;
   margin-top: 15px;
 }
@@ -151,7 +152,7 @@ header > h1 {
   border-style: solid;
   border-color: white;
   border-width: 4px;
-
+  padding: 6px 16px;
 
 }
 .workBoxes {
@@ -237,6 +238,7 @@ form {margin-top: 40px;}
   border-style: solid;
   border-color: white;
   border-width: 4px;
+  padding: 6px 16px;
 }
 footer {
   height: 100px;
