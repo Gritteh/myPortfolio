@@ -3,12 +3,9 @@
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/myportfolio.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <!-- js file -->
-  <script src="js/myportfolio.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/myportfolio.css">
+  <!-- <link media="(max-width: 1023px)" rel="stylesheet" href="css/portfolio-mobile.css"> -->
+
 </head>
 <body>
   <header>
@@ -19,12 +16,13 @@
       <a href="#" class="navs navSelected">Home</a>
     </nav>
   </header>
-  <div class="blueLine"></div>
   <div class="aboutBox">
     <h2>About</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu odio erat. Phasellus quam leo, aliquam at faucibus eget, <a href="#">aliquam sit amet risus</a>. Etiam bibendum tempus dolor, eu facilisis lorem.
     <br /><br />Nulla tempus diam sit amet felis euismod, quis malesuada mauris faucibus. In <strong>fermentum tellus</strong> nec mi vehicula vestibulum. <em>Aliquam at nulla eget</em> libero rhoncus consectetur ec vel purus.</p>
-    <a href="#">More...</a>
+    <div>
+      <a href="#" class="more">More...</a>
+    </div>
   </div>
   <div class="recentWorkBox">
     <section>
@@ -32,14 +30,14 @@
       <a id="seeMore" href="#">See more ></a>
     </section>
     <div class="workBoxes">
-      <img id="im1" src="https://i.redd.it/7hcah0o5ii3z.jpg" alt="" class="workPic">
+      <img id="im1" src="https://i.redd.it/7hcah0o5ii3z.jpg" alt="" class="workPic mobHide">
       <img id="im2" src="http://i.imgur.com/4nlgwoc.jpg" alt="" class="workPic">
       <img id="im3" src="https://i.redd.it/0wmyy6wprk8z.jpg" alt="" class="workPic">
       <img id="im4" src="http://i.imgur.com/rJwTlbz.jpg" alt="" class="workPic">
-      <img id="im5" src="https://i.redd.it/zti021cig56z.jpg" alt="" class="workPic">
+      <img id="im5" src="https://i.redd.it/zti021cig56z.jpg" alt="" class="workPic mobHide">
       <img id="im6" src="http://i.imgur.com/66EcEki.gif" alt="" class="workPic">
-      <img id="im7" src="https://i.redd.it/sa9q6hycp26z.jpg" alt="" class="workPic">
-      <img id="im8" src="https://i.redd.it/bpxpy8lact6z.jpg" alt="" class="workPic">
+      <img id="im7" src="https://i.redd.it/sa9q6hycp26z.jpg" alt="" class="workPic mobHide">
+      <img id="im8" src="https://i.redd.it/bpxpy8lact6z.jpg" alt="" class="workPic mobHide">
     </div>
 
   </div>
@@ -55,7 +53,7 @@
       </div>
       <div class="formRightSide">
         <p class="formTitle">Message</p>
-        <input class="textInputBig" type="text">
+        <textarea class="textInputBig"></textarea>
         <input class="sendButton" type="submit" value="Send">
       </div>
     </form>
@@ -63,4 +61,18 @@
   <footer>
     <p>Site designed by Ruth John 	&#169; 2017</p>
   </footer>
+
+
+  <script type="text/javascript">
+    var images = document.querySelectorAll('.workBoxes img');
+    console.log(images);
+
+
+  </script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- js file -->
+  <script src="js/myportfolio.js"></script>
+
 </body>
