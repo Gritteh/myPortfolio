@@ -299,7 +299,7 @@ footer > p {
 		z-index: 2;
 	}
 	.titleBorder {
-		border-bottom: 10px solid #24444c;
+		/*border-bottom: 10px solid #24444c;*/
 		/*transition: all 1s;*/
 	}
 	.titleNoBorder {
