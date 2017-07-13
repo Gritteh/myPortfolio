@@ -14,10 +14,10 @@ $(document).ready(function() {
       $(".titleAndIcon").removeClass("titleBorder");
       $("#navid").animate({
 
-        top: "+=62px"
+        top: "+=49px"
       }, 200);
       $(".main-wrapper").animate({
-        top: "+=62px"
+        top: "+=49px"
       }, 200);
 
 
@@ -29,10 +29,10 @@ $(document).ready(function() {
       // $("#navid").addClass("menuUnclicked");
       // $("#navid").removeClass("menuClicked");
       $("#navid").animate({
-        top: "-=62px"
+        top: "-=49px"
       }, 200);
       $(".main-wrapper").animate({
-        top: "-=62px"
+        top: "-=49px"
       }, 200);
 
       $(".titleAndIcon").addClass("titleBorder");

@@ -255,9 +255,10 @@ footer > p {
 .menuIcon {
 	display:none;
 	float: right;
-	background-image: url("../images/menu-icon60.png");
-	height: 55px;
-	width: 55px;
+	/*background-color: white;*/
+	background-image: url("../images/menu-icon-35.png");
+	height: 35px;
+	width: 35px;
 	border: none;
 	border-color: none;
 	border-style: none;
@@ -281,7 +282,7 @@ footer > p {
 		/*Invisible??!*/
 	}
 	.menuIcon:hover {
-		background-image: url("../images/menu-hover.png");
+		background-image: url("../images/menu-hover-35.png");
 	}
   header > div > h1 {
     font-size: 2em;
@@ -307,7 +308,7 @@ footer > p {
 	}
 	.main-wrapper {
 		position:absolute;
-		top: 127px;
+		top: 105px;
 	}
   nav {
     width: 100%;
@@ -327,7 +328,7 @@ footer > p {
 
   }
 	.menuUnclicked {
-		top: 55px;
+		top: 46px;
 		/*transition: all 1s;*/
 	}
 	.menuClicked {
