@@ -294,17 +294,17 @@ footer > p {
 	  overflow: auto;
 	  box-sizing: border-box;
 		width: 100%;
-		transition: all 1s;
+		/*transition: all 1s;*/
 		position: absolute;
 		z-index: 2;
 	}
 	.titleBorder {
 		border-bottom: 10px solid #24444c;
-		transition: all 1s;
+		/*transition: all 1s;*/
 	}
 	.titleNoBorder {
 		border-bottom: 0px;
-		transition: all 1s;
+		/*transition: all 1s;*/
 	}
 	.main-wrapper {
 		position:absolute;
