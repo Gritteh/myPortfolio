@@ -1,19 +1,59 @@
-/*$(document).ready(function() {
-  var im1 = document.getElementById("im1");
-  var im2 = document.getElementById("im2");
-  var im3 = document.getElementById("im3");
-  var im4 = document.getElementById("im4");
-  var im5 = document.getElementById("im5");
-  var im6 = document.getElementById("im6");
-  var im7 = document.getElementById("im7");
-  var im8 = document.getElementById("im8");
-  im1.setAttribute("src", "http://i.imgur.com/epPjEeG.gif");
-  im2.setAttribute("src", "http://i.imgur.com/t1H4KpW.gif");
-  im3.setAttribute("src", "http://i.imgur.com/LKOMfBD.gif");
-  im4.setAttribute("src", "http://i.imgur.com/LjE0mXp.gif");
-  im5.setAttribute("src", "http://i.imgur.com/sWQLakV.gif");
-  im6.setAttribute("src", "http://i.imgur.com/fNg3Apz.gif");
-  im7.setAttribute("src", "https://i.imgur.com/XMwTkC1.gif");
-  im8.setAttribute("src", "http://i.imgur.com/VPHqHOe.gif");
+$(document).ready(function() {
+  var menu = document.getElementsByClassName("menuIcon");
+  var menuq = $("#menuid");
+  var menuClick = document.getElementsByClassName("menuClicked");
+  var nav = document.getElementsByTagName("nav");
+  var header = document.getElementsByClassName("titleAndIcon");
+  menu[0].addEventListener("click", function() {
+    if ($(".titleAndIcon").hasClass("titleBorder")) {
+      // nav[0].style.display = "flex";
+
+      // $("#navid").addClass("menuClicked");
+      // $("#navid").removeClass("menuUnclicked");
+      $(".titleAndIcon").addClass("titleNoBorder");
+      $(".titleAndIcon").removeClass("titleBorder");
+      $("#navid").animate({
+
+        top: "+=62px"
+      }, 200);
+      $(".main-wrapper").animate({
+        top: "+=62px"
+      }, 200);
+
+
+      // header[0].style.borderBottom = "0px";
+      console.log("clickclassadded");
+
+    } else if ($(".titleAndIcon").hasClass("titleNoBorder")) {
+      // nav[0].style.display = "none";
+      // $("#navid").addClass("menuUnclicked");
+      // $("#navid").removeClass("menuClicked");
+      $("#navid").animate({
+        top: "-=62px"
+      }, 200);
+      $(".main-wrapper").animate({
+        top: "-=62px"
+      }, 200);
+
+      $(".titleAndIcon").addClass("titleBorder");
+      $(".titleAndIcon").removeClass("titleNoBorder");
+      // header[0].style.borderBottom = "10px";
+      // header[0].style.borderStyle = "solid";
+      // header[0].style.borderColor = "#24444c";
+      console.log("unclick");
+    }
+    // $("nav").animate({
+    //   top: "117px"
+    // }, 500);
+
+
+    console.log("clicked");
+  });
+  // menuClick[0].addEventListener("click", function() {
+  //   nav[0].style.display = "none";
+  //   nav[0].classList.add("menuUnclicked");
+  //
+  //   nav[0].classList.remove("menuClicked");
+  // });
+
 });
-*/
